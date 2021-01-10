@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message Money {
+    // the 3-letter currency code
+    string currency_code = 1;
+    // the whole units of the amount
+    int64 units = 2;
+    // number of nano units of the amount
+    int32 nanos = 3;
+}
