@@ -1,6 +1,8 @@
 syntax = "proto3";
 // import other types
-import "date.proto";
+import "date-with-package.proto";
+
+package person;
 
 /* Person is used to identify users
  * across our system */
@@ -27,7 +29,7 @@ message Person {
     EyeColour eye_colour = 9; 
     
     //birthday
-    Date birthday = 10;
+    my.date.Date birthday = 10;
 
     // defined Address within person
     message Address {
